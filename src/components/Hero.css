@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+  --accent: #A855F7;
+  --text: #ffffff;
+  --muted: #d1d5db;
+  --line-spacing: 1.6;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--text);
+  font-family:'Times New Roman', Times, serif;
+  padding: 0 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Title */
+.hero-title {
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+  line-height: var(--line-spacing);
+}
+
+.hero-title span:first-child {
+  font-size: clamp(2rem, 8vw, 75px);
+}
+
+/* Animated Gradient Text for Role */
+.hero-role {
+  display: inline-block;
+  font-weight: 700;
+  background: linear-gradient(90deg, #A855F7, #818CF8, #A855F7);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientSlide 3s linear infinite;
+}
+
+@keyframes gradientSlide {
+  0% { background-position: 0% 0%; }
+  50% { background-position: 100% 0%; }
+  100% { background-position: 0% 0%; }
+}
+
+/* Subtitle */
+.hero-subtitle {
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  color: var(--text);
+  margin-bottom: 2.5rem;
+  max-width: 650px;
+  line-height: var(--line-spacing);
+  opacity: 0;
+  animation: fadeIn 1s forwards 0.8s;
+}
+
+/* Buttons */
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  opacity: 0;
+  animation: fadeIn 1s forwards 1.2s;
+}
+
+.hero-btn {
+  padding: 0.9rem 2.2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: clamp(0.9rem, 1vw, 1rem);
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  min-width: 150px;
+}
+
+.hero-btn.primary {
+  background: var(--accent);
+  color: var(--text);
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.3);
+}
+
+.hero-btn.primary:hover {
+  background: #818cf8;
+  box-shadow: 0 0 30px rgba(168, 85, 247, 0.6);
+  transform: translateY(-4px);
+}
+
+.hero-btn.secondary {
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  background: transparent;
+}
+
+.hero-btn.secondary:hover {
+  background: rgba(168, 85, 247, 0.1);
+  transform: translateY(-4px);
+}
+
+/* Scroll indicator */
+.scroll-down {
+  margin-top: 3rem;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  color: var(--accent);
+  opacity: 0.8;
+  animation: bounceArrow 2s infinite;
+}
+
+/* ---------- Animations ---------- */
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+@keyframes bounceArrow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+}
+
+/* ---------- Responsive ---------- */
+
+/* Medium screens (tablet) */
+@media (max-width: 1024px) {
+  .hero-title { font-size: clamp(2rem, 6vw, 3.5rem); }
+  .hero-subtitle { font-size: 1.15rem; max-width: 500px; }
+  .hero-buttons { gap: 15px; }
+}
+
+/* Small screens (mobile) */
+@media (max-width: 600px) {
+  .hero-title { font-size: clamp(1.5rem, 7vw, 2.5rem); line-height: 1.4; }
+  .hero-subtitle { font-size: 1rem; margin-bottom: 1.5rem; }
+  .hero-buttons { flex-direction: column; gap: 12px; }
+  .hero-btn { width: 80%; max-width: 250px; }
+  .scroll-down { font-size: 1.2rem; }
+}
+
+/* Ultra-wide screens */
+@media (min-width: 1440px) {
+  .hero-title { font-size: clamp(3rem, 5vw, 4.5rem); }
+  .hero-subtitle { font-size: 1.4rem; }
+  .hero-buttons { gap: 25px; }
+}

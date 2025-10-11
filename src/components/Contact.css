@@ -1,0 +1,70 @@
+.contact-section {
+  padding: 60px 20px;
+  text-align: center;
+  color: #fff;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.contact-section h2 {
+ font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: #A855F7;
+    font-weight: 700;
+  background: linear-gradient(90deg, #A855F7, #818CF8, #A855F7);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientSlide 3s linear infinite;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Elegant glassmorphism inputs */
+.contact-form input,
+.contact-form textarea {
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(31, 31, 70, 0.4); /* subtle indigo glass effect */
+  color: #fff;
+  font-size: 14px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #7f7fff;
+  box-shadow: 0 0 15px rgba(127, 127, 255, 0.3);
+  outline: none;
+}
+
+/* Elegant button */
+.contact-form button {
+  padding: 14px 0;
+  border-radius: 12px;
+  border: none;
+  background: #A855F7;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 12px rgba(95, 95, 255, 0.4);
+}
+
+.contact-form button:hover {
+  background: linear-gradient(#8c22ef);
+  box-shadow: 0 0 25px rgba(95, 95, 255, 0.6);
+}

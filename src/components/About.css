@@ -1,0 +1,75 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Section title with gradient animation */
+.about-title {
+  font-size: clamp(2rem, 5vw, 2.5rem);
+  font-weight: 700;
+  margin-bottom: 2rem;
+  background: linear-gradient(90deg, #A855F7, #818CF8, #A855F7);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientSlide 3s linear infinite;
+}
+
+@keyframes gradientSlide {
+  0% { background-position: 0% 0%; }
+  50% { background-position: 100% 0%; }
+  100% { background-position: 0% 0%; }
+}
+
+/* Glass-style container */
+.about-container {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: clamp(2rem, 4vw, 6rem) clamp(1.5rem, 3vw, 5rem);
+  max-width: 1000px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: clamp(1rem, 1.4vw, 1.5rem);
+  line-height: 1.6;   
+  letter-spacing: 0.5px; 
+  word-spacing: 1px;  
+  transition: all 0.3s ease;
+  margin: 2rem auto;
+}
+
+/* ---------- Responsive Adjustments ---------- */
+
+/* Medium screens (tablet) */
+@media (max-width: 1024px) {
+  .about-container {
+    padding: clamp(2rem, 3vw, 4rem);
+    font-size: 1.2rem;
+  }
+}
+
+/* Small screens (mobile) */
+@media (max-width: 600px) {
+  .about-container {
+    padding: clamp(1.5rem, 4vw, 2.5rem);
+    font-size: 1rem;
+    border-radius: 15px;
+  }
+}
+
+/* Ultra-wide screens */
+@media (min-width: 1440px) {
+  .about-container {
+    padding: clamp(5rem, 5vw, 8rem);
+    font-size: 1.6rem;
+    max-width: 1200px;
+  }
+}

@@ -1,0 +1,153 @@
+.projects-section {
+ 
+  text-align: center;
+  color: #fff;
+  font-family:'Times New Roman', Times, serif;
+  position: relative;
+  overflow: hidden;
+  font-size: 1rem;
+}
+
+.projects-title {
+  font-size: 2.8rem;
+  color: #A855F7;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+    font-weight: 700;
+  background: linear-gradient(90deg, #A855F7, #818CF8, #A855F7);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientSlide 3s linear infinite;
+}
+
+.projects-subtitle {
+  color: #d1d5db;
+  margin-bottom: 4rem;
+  font-size: 1.3rem;
+}
+
+/* Grid layout */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+}
+
+/* Hologram Card */
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(168, 85, 247, 0.2);
+  border-radius: 16px;
+  padding: 2rem;
+  backdrop-filter: blur(15px);
+  transition: all 0.5s ease;
+  position: relative;
+  overflow: hidden;
+  animation: float 6s ease-in-out infinite;
+}
+
+.project-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(168,85,247,0.2) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+    pointer-events: none;
+}
+
+.project-card:hover::before {
+  opacity: 1;
+}
+
+.project-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 0 30px rgba(168, 85, 247, 0.4);
+  border-color: rgba(168, 85, 247, 0.5);
+}
+
+/* Card content */
+.card-content h3 {
+  color: #fff;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-content p {
+  color: #d1d5db;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tech-stack span {
+  background: rgba(168,85,247,0.1);
+  border: 1px solid rgba(168,85,247,0.3);
+  border-radius: 20px;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.8rem;
+  color: #A855F7;
+}
+
+/* Buttons */
+.card-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  background: #A855F7;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #9333EA;
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.5);
+  transform: translateY(-3px);
+}
+
+.btn.secondary {
+  background: transparent;
+  border: 1px solid #A855F7;
+  color: #A855F7;
+}
+
+.btn.secondary:hover {
+  background: rgba(168,85,247,0.1);
+}
+
+/* Floating subtle animation */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .projects-title {
+    font-size: 2.2rem;
+  }
+  .project-card {
+    padding: 1.5rem;
+  }
+}
