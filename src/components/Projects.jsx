@@ -15,7 +15,7 @@ const projects = [
     description:
       "Full-stack web app for a fertilizer company using React and Node.js.",
     tech: ["React", "Node.js", "Express", "MongoDB"],
-    live: "https://galaxybiotech.co.in/",
+    live: "https://luxury-eclair-df0927.netlify.app/",
   },
   {
     title: "Petty Cash Manager (Capstone Project)",
