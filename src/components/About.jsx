@@ -13,7 +13,7 @@ const About = () => {
       transition={{ duration: 1 }}
     >
       {/* Title outside the container */}
-      <h2 className="about-title">About Me</h2>
+      <h2 className="about-title">A Little Bit About Me</h2>
 
       <motion.div
         className="about-container"
