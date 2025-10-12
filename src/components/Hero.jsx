@@ -30,9 +30,8 @@ const Hero = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, delay: 0.6 }}
         >
-          I build websites that bring your ideas to life. From sleek designs to smooth interactions, I make digital experiences that are easy to use and look amazing.
-
-Let’s turn your vision into a website people love.
+          I bring your digital vision to life by turning ideas into interactive,
+          user-friendly websites that blend creativity and technology.
         </motion.p>
 
         <motion.div
