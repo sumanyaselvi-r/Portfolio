@@ -25,21 +25,29 @@ const Experience = () => {
       title: "Frontend Developer (Intern)",
       company: "Sanyu Infotech, Sivakasi",
       duration: "Nov 2023 – Dec 2023",
-      desc: "Developed a responsive restaurant website using HTML, CSS, and Bootstrap. Focused on mobile-friendly layouts and clean UI.",
-    },
+      desc: "I worked on a mobile-friendly restaurant website using HTML, CSS, and Bootstrap. This role helped me grow in adaptability, creativity, and collaboration, turning static designs into interactive web pages."},
     {
       title: "WordPress Web Designer(Full Time)",
       company: "Xpressreach Branding Agency",
       duration: "May 2024 – May 2025",
-      desc: "Designed and developed responsive WordPress sites using Divi. Optimized performance and applied basic SEO techniques.",
+      desc: "I built responsive WordPress websites using Divi and customized themes for clients. Along the way, I honed communication, problem-solving, and teamwork skills, making sure every project met client expectations.",
+    },
+    {
+      title: "Freelance Web Developer",
+      company: "Fertilizer Company Website",
+      duration: "Jan 2024 – Feb 2024",
+      desc: "I built a full-stack website with React, Node.js, and Express, including contact forms and smooth performance across devices. Freelancing taught me initiative, accountability, and how to manage projects independently.",
     },
     
   ];
 
   return (
     <section className="experience" id="experience">
-      <h2 className="exp-title">My Journey</h2>
+      <h2 className="exp-title">Career Journey</h2>
+                        <p className="skills-subtitle">From internships to professional projects, here’s my journey.</p>
+
       <div className="timeline">
+
         {experiences.map((exp, index) => (
           <div
             key={index}
