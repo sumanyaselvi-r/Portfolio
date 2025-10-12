@@ -15,7 +15,7 @@ const projects = [
     description:
       "Full-stack web app for a fertilizer company using React and Node.js.",
     tech: ["React", "Node.js", "Express", "MongoDB"],
-    live: "https://luxury-eclair-df0927.netlify.app/",
+    live: "https://galaxybiotech.co.in/",
   },
   {
     title: "Petty Cash Manager (Capstone Project)",
@@ -37,8 +37,7 @@ const Projects = () => {
         viewport={{ once: false }}
         transition={{ duration: 0.8 }}
       >
-        My Work
-      </motion.h2>
+Projects Built by Me      </motion.h2>
 
       {/* Subtitle */}
       <motion.p
