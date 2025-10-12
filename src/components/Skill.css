@@ -32,7 +32,6 @@
   gap: 2rem;
   max-width: 1100px;
   margin: 0 auto;
-  font-size: 1.3rem;
 }
 
 /* Glass Cards */
@@ -43,8 +42,8 @@
   padding: 2rem;
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 0 25px rgba(168, 85, 247, 0.15);
-  transition: all 0.4s ease;
   font-size: 1.3rem;
+  transition: all 0.4s ease;
 }
 
 .skill-card:hover {
@@ -76,7 +75,6 @@
   font-size: 0.95rem;
   color: #fff;
   transition: all 0.3s ease;
-  animation: float 6s ease-in-out infinite alternate;
 }
 
 .skill-tag:hover {
@@ -84,13 +82,6 @@
   background: rgba(168, 85, 247, 0.15);
   box-shadow: 0 0 15px #a855f7, 0 0 25px #818cf8;
   transform: scale(1.1);
-}
-
-/* Floating effect */
-@keyframes float {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-6px); }
-  100% { transform: translateY(0); }
 }
 
 /* Animated Gradient */
@@ -124,15 +115,12 @@
   .skills {
     padding: 4rem 1.5rem;
   }
-
   .skill-card {
     padding: 1.5rem;
   }
-
   .skill-category {
     font-size: 1.3rem;
   }
-
   .skill-tag {
     font-size: 0.85rem;
     padding: 0.4rem 0.8rem;
