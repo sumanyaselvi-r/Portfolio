@@ -15,12 +15,11 @@ const experiences = [
     duration: "May 2024 – May 2025",
     desc: "I built responsive WordPress websites using Divi and customized themes for clients. Along the way, I honed communication, problem-solving, and teamwork skills, making sure every project met client expectations.",
   },
-  /*{
-    title: "Freelance Web Developer",
-    company: "Fertilizer Company Website",
-    duration: "Jan 2024 – Feb 2024",
-    desc: "I built a full-stack website with React, Node.js, and Express, including contact forms and smooth performance across devices. Freelancing taught me initiative, accountability, and how to manage projects independently.",
-  }*/
+  {
+    title: "Business info website",
+    company: "Payantech It Solution",
+    desc: "I built a Business info website with React including contact forms and smooth performance across devices. Freelancing taught me initiative, accountability, and how to manage projects independently.",
+  }
 ];
 
 // Card animation variants
