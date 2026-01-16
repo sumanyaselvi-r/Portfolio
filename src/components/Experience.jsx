@@ -16,9 +16,15 @@ const experiences = [
     desc: "I built responsive WordPress websites using Divi and customized themes for clients. Along the way, I honed communication, problem-solving, and teamwork skills, making sure every project met client expectations.",
   },
   {
-    title: "Business info website",
+    title: "Freelance web designer",
     company: "Payantech It Solution",
     desc: "I built a Business info website with React including contact forms and smooth performance across devices. Freelancing taught me initiative, accountability, and how to manage projects independently.",
+  },
+  {
+    title: "Video Analyst",
+    company: "Video Analyst",
+    duration: "Nov 2025 – Jan 2026",
+    desc: "Video Analyst with hands-on experience in monitoring and analyzing surveillance footage, accurately recording traffic data, and reporting incidents to support reliable decision-making.",
   }
 ];
 
