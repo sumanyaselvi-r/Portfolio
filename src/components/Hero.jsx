@@ -21,7 +21,7 @@ const Hero = () => {
         >
           <span>Hi, I'm Sumanya</span>
           <br />
-          <span className="hero-role">Web Developer</span>
+          <span className="hero-role">Front-End Developer</span>
         </motion.h1>
 
         <motion.p
