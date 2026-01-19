@@ -4,8 +4,7 @@ import "./Skill.css";
 
 const skillsData = {
   Frontend: ["JavaScript", "React.js", "Bootstrap", "Tailwind CSS", "WordPress (Divi)"],
-  Backend: ["Node.js", "Express.js", "MongoDB", "RESTful APIs", "Authentication (JWT)"],
-  "Design & Tools": ["Canva", "Figma", "VS Code", "Git & GitHub", "AI Tools"],
+  "Design & Tools": ["Canva", "VS Code", "Git & GitHub", "AI Tools"],
   "Soft Skills": ["Problem Solving", "Teamwork", "Adaptability", "Communication", "Time Management", "Continuous Learning"],
 };
 
