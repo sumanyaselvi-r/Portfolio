@@ -21,14 +21,14 @@ const projects = [
     title: "Petty Cash Manager (Capstone Project)",
     description:
       "Developed a simple petty cash management app to track expenses.",
-    tech: ["React"],
+    tech: ["Mern"],
     live: "https://precious-hummingbird-7f25db.netlify.app/",
   },
    {
     title: "Business info website",
     description:
       "built a Business info website using React including contact forms and smooth performance across devices.",
-    tech: ["MERN Stack"],
+    tech: ["React"],
     live: "https://payantech.in/",
   }
 ];
