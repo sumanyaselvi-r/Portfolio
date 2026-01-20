@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Resume from '../assets/Resume.pdf';
+import Resume from '../assets/Sumanya_Resume.pdf';
 import "./Hero.css";
 
 const Hero = () => {
