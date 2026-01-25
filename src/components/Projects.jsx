@@ -17,13 +17,6 @@ const projects = [
     tech: ["React", "Node.js", "Express", "MongoDB"],
     live: "https://luxury-eclair-df0927.netlify.app/",
   },
-  {
-    title: "Petty Cash Manager (Capstone Project)",
-    description:
-      "Developed a simple petty cash management app to track expenses.",
-    tech: ["Mern"],
-    live: "https://precious-hummingbird-7f25db.netlify.app/",
-  },
    {
     title: "Business info website",
     description:
