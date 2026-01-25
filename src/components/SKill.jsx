@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import "./Skill.css";
 
 const skillsData = {
-  Frontend: ["JavaScript", "React.js", "Bootstrap", "Tailwind CSS", "WordPress (Divi)"],
+  Frontend: ["JavaScript", "React.js", "Bootstrap", "Html, CSS", "WordPress (Divi)"],
   "Design & Tools": ["Canva", "VS Code", "Git & GitHub", "AI Tools"],
   "Soft Skills": ["Problem Solving", "Teamwork", "Adaptability", "Communication", "Time Management", "Continuous Learning"],
 };
