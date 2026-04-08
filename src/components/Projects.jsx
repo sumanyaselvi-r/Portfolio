@@ -3,20 +3,6 @@ import { motion } from "framer-motion";
 import "./Projects.css";
 
 const projects = [
-  {
-    title: "Food Restaurant Website",
-    description:
-      "Responsive restaurant website showcasing menu, offers, and contact info.",
-    tech: ["HTML", "CSS", "Bootstrap"],
-    live: "https://darling-seahorse-8c9782.netlify.app/",
-  },
-  {
-    title: "Fertilizer Company Website",
-    description:
-      "Full-stack web app for a fertilizer company using React and Node.js.",
-    tech: ["React", "Node.js", "Express", "MongoDB"],
-    live: "https://luxury-eclair-df0927.netlify.app/",
-  },
    {
     title: "Business info website",
     description:
